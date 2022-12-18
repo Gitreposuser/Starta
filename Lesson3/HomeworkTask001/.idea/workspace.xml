@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1e7eaa5-9776-4954-b808-aeea0e51f8e9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask001/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask001/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask001/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask001/AdditionalTask001.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask001/out/production/AdditionalTask001/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask001/out/production/AdditionalTask001/WordService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask001/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask001/src/WordService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask002/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask002/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask002/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask002/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask002/AdditionalTask002.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask002/out/production/AdditionalTask002/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask002/out/production/AdditionalTask002/PowerCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask002/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask002/src/PowerCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask003/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask003/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask003/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask003/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask003/AdditionalTask003.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask003/out/production/AdditionalTask003/CreditCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask003/out/production/AdditionalTask003/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask003/src/CreditCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask003/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/AdditionalTask004.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/lib/apiguardian-api-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/lib/junit-jupiter-5.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/lib/junit-jupiter-api-5.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/lib/junit-jupiter-engine-5.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/lib/junit-jupiter-params-5.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/lib/junit-platform-commons-1.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/lib/junit-platform-engine-1.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/lib/opentest4j-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/out/production/AdditionalTask004/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/out/production/AdditionalTask004/Palindrom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/out/test/AdditionalTask004/PalindromTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/src/Palindrom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask004/test/PalindromTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/.idea/libraries/junit_jupiter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/AdditionalTask005.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/lib/apiguardian-api-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/lib/junit-jupiter-5.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/lib/junit-jupiter-api-5.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/lib/junit-jupiter-engine-5.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/lib/junit-jupiter-params-5.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/lib/junit-platform-commons-1.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/lib/junit-platform-engine-1.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/lib/opentest4j-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/out/production/AdditionalTask005/ArrayCopy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/out/production/AdditionalTask005/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/out/test/AdditionalTask005/ArrayCopyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/src/ArrayCopy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdditionalTask005/test/ArrayCopyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask001/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask001/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask001/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask001/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask001/HomeworkTask001.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask001/out/production/HomeworkTask001/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask001/out/production/HomeworkTask001/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask001/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask001/src/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask002/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask002/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask002/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask002/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask002/HomeworkTask002.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask002/out/production/HomeworkTask002/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask002/out/production/HomeworkTask002/Phone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask002/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask002/src/Phone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask003/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask003/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask003/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask003/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask003/HomeworkTask003.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask003/out/production/HomeworkTask003/Card.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask003/out/production/HomeworkTask003/Dealer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask003/out/production/HomeworkTask003/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask003/out/production/HomeworkTask003/UI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask003/src/Card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask003/src/Dealer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask003/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeworkTask003/src/UI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/out/production/untitled/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/out/production/untitled/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/src/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled1/out/production/untitled1/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled1/out/production/untitled1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled1/src/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled1/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled1/untitled1.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2J6Z0KDyGsgTpsmoiqH8IGGYhuk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Programming/IdeaProjects/Lesson3/HomeworkTask001",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1e7eaa5-9776-4954-b808-aeea0e51f8e9" name="Changes" comment="" />
+      <created>1671400270627</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671400270627</updated>
+      <workItem from="1671400271803" duration="210000" />
+      <workItem from="1671400852144" duration="51000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
