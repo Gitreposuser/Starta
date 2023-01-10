@@ -2,10 +2,8 @@ import java.util.Random;
 
 public class Dealer {
     private Card [] cardStack;
-    private int currentCardPointer;
 
     public void initCardStack() {
-        this.currentCardPointer = 0;
         this.cardStack = new Card[52];
         String [] cardSuit = new String[] {
                 "\u2660", "\u2665", "\u2666", "\u2663"
@@ -50,20 +48,26 @@ public class Dealer {
             System.out.println(" To many players. Try again.");
             return;
         }
+        /*
         for(int playerNum = 0; playerNum < numberOfPlayers; playerNum++) {
             String playerNumber = Integer.toString((playerNum + 1));
             dealCards(playerNumber + " player cards is:");
         }
+        */
+        for(int playerNum = 0; playerNum < numberOfPlayers; playerNum++) {
+            String playerNumber = Integer.toString((playerNum + 1));
+            dealCards(playerNum, " player " + playerNumber + " cards is:");
+        }
     }
 
-    private void dealCards(String message) {
+    private void dealCards(int playerNum, String message) {
         System.out.println("");
         System.out.println(message);
-        int startVal = this.currentCardPointer;
-        int endVal = this.currentCardPointer + 5;
-        this.currentCardPointer += 5;
+        final int cardParPlayer = 5;
+        int counter = 0;
 
-        for(int card = startVal; card < endVal; card++) {
+        for(int card = playerNum; counter < cardParPlayer; card += (playerNum + 1)) {
+            counter++;
             System.out.print(this.cardStack[card].getValue() + ", ");
         }
         System.out.println("");
