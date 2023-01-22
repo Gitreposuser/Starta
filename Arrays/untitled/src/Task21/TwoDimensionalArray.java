@@ -8,7 +8,7 @@ public class TwoDimensionalArray {
         return result;
     }
 
-    void fillArrayWithRandomNUmbers(float [][] array,
+    void fillArrayWithRandomNumbers(float [][] array,
             final int rows, final int columns, final float bound) {
         Random rnd = new Random();
         for(int column = 0; column < columns; column++) {
@@ -44,7 +44,7 @@ public class TwoDimensionalArray {
         int rows = 5;
         int columns = 5;
         float [][] array = arrayService.createArray(rows, columns);
-        arrayService.fillArrayWithRandomNUmbers(array, rows, columns, 100);
+        arrayService.fillArrayWithRandomNumbers(array, rows, columns, 100);
         arrayService.showArray(array, rows, columns);
         float sumOfElements = arrayService.calculateSumOfArrayElements(array, rows, columns);
         System.out.println("Sum of elements = " + sumOfElements);
