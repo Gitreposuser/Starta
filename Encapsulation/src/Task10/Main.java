@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         CreditCard card = new CreditCard();
-        card.InitCreditCard(1234, 1111);
+        card.initCreditCard(1234, 1111);
         System.out.println("deposit 200");
         card.deposit(1111, 200);
         System.out.println("new balance: ");

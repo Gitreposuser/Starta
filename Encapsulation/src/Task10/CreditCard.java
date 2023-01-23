@@ -7,7 +7,23 @@ public class CreditCard {
     private double creditLimit;
     private double debt;
 
-    public void InitCreditCard(long cardId, int pinCode) {
+    public long getCardId() {
+        return cardId;
+    }
+
+    public int getPinCode() {
+        return pinCode;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public double getCreditLimit() { return creditLimit; }
+
+    public double getDebt() { return debt; }
+
+    public void initCreditCard(long cardId, int pinCode) {
         this.cardId = cardId;
         this.pinCode = pinCode;
         this.balance = 0;
@@ -36,6 +52,13 @@ public class CreditCard {
         }
     }
 
+    public void setCreditLimit(int pincode, double sum) {
+        if(isDataInvalid(pincode, sum)) {
+            return;
+        }
+        this.creditLimit = sum;
+    }
+
     private boolean isBalanceEnought(double sum) {
         if(sum <= this.balance)
         {
@@ -49,13 +72,6 @@ public class CreditCard {
             return true;
         }
         return false;
-    }
-
-    public void setCreditLimit(int pincode, double sum) {
-        if(isDataInvalid(pincode, sum)) {
-            return;
-        }
-        this.creditLimit = sum;
     }
 
     private boolean isDataInvalid(int pincode, double sum) {
