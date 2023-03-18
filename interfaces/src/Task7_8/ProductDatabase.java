@@ -1,8 +1,8 @@
-package Task7;
+package Task7_8;
 
-// **************
-// *** Task 7 ***
-// **************
+// ******************
+// *** Task 7 - 8 ***
+// ******************
 
 // This interface isn't a @FunctionalInterface
 // Because he declares two methods

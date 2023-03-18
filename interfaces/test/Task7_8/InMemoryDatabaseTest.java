@@ -1,4 +1,4 @@
-package Task7;
+package Task7_8;
 
 // **************
 // *** Task 7 ***
