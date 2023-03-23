@@ -8,13 +8,11 @@ public class Student {
     private int id;
     private String name;
     private String group;
-
+    private int course;
+    private int[] grades;
     public int getCourse() {
         return course;
     }
-
-    private int course;
-    private int[] grades;
 
     public Student() {
         this.id = ++counter;
