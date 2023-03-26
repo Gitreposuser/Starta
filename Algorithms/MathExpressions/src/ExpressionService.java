@@ -30,11 +30,11 @@ public class ExpressionService {
         String[] commands = new String[] {
                 "cmd.exe",
                 "/c",
-                "start",
-                "/wait",
+                //"start",
+                //"/wait",
                 //"111.txt",
                 "javac Calculate.java",
-                "java Calculate"
+                //"java Calculate"
         };
         ProcessBuilder process = new ProcessBuilder();
         process.command(commands);
