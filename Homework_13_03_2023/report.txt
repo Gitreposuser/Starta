@@ -1,0 +1,8 @@
+name = Olga Mayer salary : 7000 salary date : 2023-03-27
+name = Irina Duran salary : 37000 salary date : 2023-03-27
+name = Victor Thompson salary : 36000 salary date : 2023-03-27
+name = Irina Lauren salary : 4000 salary date : 2023-03-27
+name = Victor Lauren salary : 11000 salary date : 2023-03-27
+name = Viki Edison salary : 23000 salary date : 2023-03-27
+name = Tom Thompson salary : 13000 salary date : 2023-03-27
+
