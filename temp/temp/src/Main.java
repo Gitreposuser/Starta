@@ -1,20 +1,24 @@
-import java.util.Arrays;
-import java.util.regex.Pattern;
-import java.util.stream.Stream;
-
-import static java.lang.System.*;
-import static java.util.spi.ToolProvider.findFirst;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        String[] arr = {"a1", "a2", "a3", "abc1", "cba", "ff"};
-        Stream<String> str = Arrays.stream(arr);
-        /*
-        str.findFirst().ifPresentOrElse(System.out::println,
-                () -> out.println("xxx"));
+        LinkedList<Integer> list = new LinkedList<>();
+        list.add(1);
+        list.add(3);
+        list.add(5);
+        list.add(-3);
+        list.add(15);
+        list.add(Integer.MAX_VALUE);
 
-         */
-        str.filter(x -> x.contains("f") || x.contains("2"))
-                .map(x -> x += "_x").forEach(out::println);
+        for(int num: list){
+            if(num % 2 != 0) {
+                System.out.println(true);
+            } else {
+                System.out.println(false);
+            }
+        }
+
     }
 }

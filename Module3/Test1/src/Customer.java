@@ -18,7 +18,7 @@ public class Customer {
         }
     }
 
-    public void getLastPurchases(LocalDate fromDate, int interval) {
-
+    public void showLastPurchases(LocalDate fromDate, int interval) {
+        history.showLastPurchases(fromDate, interval);
     }
 }

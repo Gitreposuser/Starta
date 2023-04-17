@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -14,7 +15,8 @@ public class ShoppingDemo {
         }
         // Get shopping history for last 30 days of each customer
         for(Customer customer: clients) {
-            //customer.
+            customer.showLastPurchases(LocalDate.of(2023, 1, 1),
+                    30);
         }
     }
 }

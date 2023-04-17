@@ -1,4 +1,6 @@
+import java.io.PrintStream;
 import java.time.LocalDate;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -15,15 +17,19 @@ public class ShoppingHistory {
         history.put(products.get(0).getPurchaseDate(), products);
     }
 
-    public void getLastPurchases(LocalDate fromDate, int interval) {
-        history.values().stream()
-                .flatMap(p -> p.stream()
-                .filter(pr -> {
-                    LocalDate toDate = fromDate.plusDays(interval);
-                    pr.getPurchaseDate().isBefore(toDate);
-                })
-                .distinct()
-                .forEach(System.out::println));
+    public void showLastPurchases(LocalDate fromDate, int interval) {
+        LocalDate toDate = fromDate.plusDays(interval);
+
+        history.keySet().stream()
+            .filter(date -> date.isAfter(fromDate) && date.isBefore(toDate))
+            .map(productList -> history.get(productList))
+            .flatMap(List::stream)
+            .map(el -> el.getProductName())
+            .sorted()
+            .distinct()
+            .forEachOrdered(p -> {
+                System.out.println(p);
+            });
     }
 
     public void showAllShoppingDays() {

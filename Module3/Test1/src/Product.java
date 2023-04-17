@@ -2,8 +2,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Objects;
 
-public class Product {
-
+public class Product{
     private String name;
     private LocalDate purchaseDate;
     private LocalTime purchaseTime;
@@ -35,27 +34,24 @@ public class Product {
 
         Product product = (Product) o;
 
-        if (!Objects.equals(name, product.name))
+        if (!Objects.equals(name, product.name)) {
             return false;
-        if (!Objects.equals(purchaseTime, product.purchaseTime))
-            return false;
-        return Objects.equals(purchaseDate, product.purchaseDate);
+        }
+        return true;
     }
 
     @Override
     public int hashCode() {
         int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + (purchaseTime != null ? purchaseTime.hashCode() : 0);
-        result = 31 * result + (purchaseDate != null ? purchaseDate.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
+        return "\n Product{" +
+                " name='" + name + '\'' +
                 ", purchaseTime=" + purchaseTime +
                 ", purchaseDate=" + purchaseDate +
-                '}';
+                "}";
     }
 }
