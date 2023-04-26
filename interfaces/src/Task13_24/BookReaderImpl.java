@@ -1,7 +1,7 @@
-package Task13_18;
+package Task13_24;
 
 // ********************
-// *** Task 13 - 17 ***
+// *** Task 13 - 24 ***
 // ********************
 
 import java.util.LinkedList;
@@ -54,6 +54,37 @@ public class BookReaderImpl implements BookReader {
             }
         }
         return Optional.of(books);
+    }
+
+    @Override
+    public boolean setAsRead(Book book) {
+        if(!library.contains(book)) {
+            return false;
+        }
+        book.setAsRead();
+        return true;
+    }
+
+    @Override
+    public Optional<List<Book>> getAllReadBooks() {
+        List<Book> readBooks = new LinkedList<>();
+        for(Book book: library.getBooks()) {
+            if(book.isRead()) {
+                readBooks.add(book);
+            }
+        }
+        return Optional.of(readBooks);
+    }
+
+    @Override
+    public Optional<List<Book>> getAllUnreadBooks() {
+        List<Book> unreadBooks = new LinkedList<>();
+        for(Book book: library.getBooks()) {
+            if(!book.isRead()) {
+                unreadBooks.add(book);
+            }
+        }
+        return Optional.of(unreadBooks);
     }
 
     @Override

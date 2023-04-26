@@ -1,7 +1,7 @@
-package Task13_18;
+package Task13_24;
 
 // ********************
-// *** Task 13 - 17 ***
+// *** Task 13 - 24 ***
 // ********************
 
 import java.util.regex.Matcher;
@@ -10,8 +10,13 @@ import java.util.regex.Pattern;
 public class Book {
     private String author;
     private String title;
+
     private boolean isRead;
     private String text;
+
+    public boolean isRead() {
+        return isRead;
+    }
 
     public Book(String author, String title) {
         this.author = author;
@@ -60,6 +65,10 @@ public class Book {
             return true;
         }
         return false;
+    }
+
+    public void setAsRead() {
+        isRead = true;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package Task13_18;
+package Task13_24;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -9,11 +9,11 @@ import java.util.List;
 
 class BookReaderImplTest {
     final Book[] books = new Book[] {
-            new Book("Arthur Wild", "Gemini"),
-            new Book("Arthur Bold", "Octangle"),
-            new Book("Arthur Wild", "Gemini"),
-            new Book("Arthur Mars", "Peace"),
-            new Book("Arthur Wild", "Marble"),
+            new Book("Arthur Wild", "Gemini"),      // 0
+            new Book("Arthur Bold", "Octangle"),    // 1
+            new Book("Arthur Wild", "Gemini"),      // 2
+            new Book("Arthur Mars", "Peace"),       // 3
+            new Book("Arthur Wild", "Marble"),      // 4
             new Book("Ar", null),
             new Book(null, null),
             new Book(null, "titl"),
@@ -108,15 +108,15 @@ class BookReaderImplTest {
     @Test
     void findByAuthor() {
         List<Book> expectedList = new LinkedList<>();
-        expectedList.add(new Book("Arthur Wild", "Gemini"));
-        expectedList.add(new Book("Arthur Wild", "Marble"));
+        expectedList.add(books[0]);
+        expectedList.add(books[4]);
 
         BookReader reader = new BookReaderImpl();
-        reader.addBook(new Book("Arthur Wild", "Gemini"));
-        reader.addBook(new Book("Arthur Wild", "Marble"));
-        reader.addBook(new Book("Arthur Bold", "Octangle"));
-        reader.addBook(new Book("Arthur Mars", "Peace"));
-        reader.addBook(new Book("Arthur Wild", "Marble"));
+        reader.addBook(books[2]);
+        reader.addBook(books[4]);
+        reader.addBook(books[1]);
+        reader.addBook(books[3]);
+        reader.addBook(books[4]);
         List<Book> actualList = reader.findByAuthor("Arthur Wild").get();
 
         Assertions.assertEquals(expectedList, actualList);
@@ -127,11 +127,11 @@ class BookReaderImplTest {
         List<Book> expectedList = new ArrayList<>();
 
         BookReader reader = new BookReaderImpl();
-        reader.addBook(new Book("Arthur Wild", "Gemini"));
-        reader.addBook(new Book("Arthur Wild", "Marble"));
-        reader.addBook(new Book("Arthur Bold", "Octangle"));
-        reader.addBook(new Book("Arthur Mars", "Peace"));
-        reader.addBook(new Book("Arthur Wild", "Marble"));
+        reader.addBook(books[0]);
+        reader.addBook(books[4]);
+        reader.addBook(books[1]);
+        reader.addBook(books[3]);
+        reader.addBook(books[4]);
         List<Book> actualList = reader.findByAuthor("Nikola Wild").get();
 
         Assertions.assertEquals(expectedList, actualList);
@@ -140,17 +140,17 @@ class BookReaderImplTest {
     @Test
     void findByPartialNamePositive() {
         List<Book> expectedList = new LinkedList<>();
-        expectedList.add(new Book("Arthur Wild", "Gemini"));
-        expectedList.add(new Book("Arthur Wild", "Marble"));
-        expectedList.add(new Book("Arthur Bold", "Octangle"));
-        expectedList.add(new Book("Arthur Mars", "Peace"));
+        expectedList.add(books[0]);
+        expectedList.add(books[4]);
+        expectedList.add(books[1]);
+        expectedList.add(books[3]);
 
         BookReader reader = new BookReaderImpl();
-        reader.addBook(new Book("Arthur Wild", "Gemini"));
-        reader.addBook(new Book("Arthur Wild", "Marble"));
-        reader.addBook(new Book("Arthur Bold", "Octangle"));
-        reader.addBook(new Book("Arthur Mars", "Peace"));
-        reader.addBook(new Book("Arthur Wild", "Marble"));
+        reader.addBook(books[0]);
+        reader.addBook(books[4]);
+        reader.addBook(books[1]);
+        reader.addBook(books[3]);
+        reader.addBook(books[4]);
         List<Book> actualList = reader.findByAuthor("Art").get();
 
         Assertions.assertEquals(expectedList, actualList);
@@ -159,16 +159,89 @@ class BookReaderImplTest {
     @Test
     void findByPartialLastNamePositive() {
         List<Book> expectedList = new LinkedList<>();
-        expectedList.add(new Book("Arthur Mars", "Peace"));
+        expectedList.add(books[3]);
 
         BookReader reader = new BookReaderImpl();
-        reader.addBook(new Book("Arthur Wild", "Gemini"));
-        reader.addBook(new Book("Arthur Wild", "Marble"));
-        reader.addBook(new Book("Arthur Bold", "Octangle"));
-        reader.addBook(new Book("Arthur Mars", "Peace"));
-        reader.addBook(new Book("Arthur Wild", "Marble"));
+        reader.addBook(books[0]);
+        reader.addBook(books[4]);
+        reader.addBook(books[1]);
+        reader.addBook(books[3]);
+        reader.addBook(books[4]);
         List<Book> actualList = reader.findByAuthor("Mar").get();
 
         Assertions.assertEquals(expectedList, actualList);
+    }
+
+    @Test
+    void setAsReadNegative() {
+        BookReader reader = new BookReaderImpl();
+        reader.addBook(books[0]);
+        reader.addBook(books[4]);
+        reader.addBook(books[1]);
+        reader.addBook(books[3]);
+        reader.addBook(books[4]);
+
+        boolean expectedValue = false;
+        boolean actualValue = reader.setAsRead(new Book("some title",
+                "some author"));
+        Assertions.assertEquals(expectedValue, actualValue);
+    }
+
+    @Test
+    void setAsReadPositive() {
+        BookReader reader = new BookReaderImpl();
+        reader.addBook(books[0]);
+        reader.addBook(books[4]);
+        reader.addBook(books[1]);
+        reader.addBook(books[3]);
+        reader.addBook(books[4]);
+
+        boolean expectedValue = true;
+        boolean actualValue = reader.setAsRead(books[1]);
+        Assertions.assertEquals(expectedValue, actualValue);
+    }
+
+    @Test
+    void getReadBooksPositive() {
+        List<Book> expectedValues = new LinkedList<>();
+        expectedValues.add(books[0]);
+        expectedValues.add(books[1]);
+
+        BookReader reader = new BookReaderImpl();
+        reader.addBook(books[0]);
+        reader.addBook(books[4]);
+        reader.addBook(books[1]);
+        reader.addBook(books[3]);
+        reader.addBook(books[4]);
+
+        reader.setAsRead(books[0]);
+        reader.setAsRead(books[1]);
+
+        List<Book> actualValues = new LinkedList<>();
+        actualValues.addAll(reader.getAllReadBooks().get());
+
+        Assertions.assertEquals(expectedValues, actualValues);
+    }
+
+    @Test
+    void getReadBooksNegative() {
+        List<Book> expectedValues = new LinkedList<>();
+        expectedValues.add(books[1]);
+        expectedValues.add(books[3]);
+
+        BookReader reader = new BookReaderImpl();
+        reader.addBook(books[0]);
+        reader.addBook(books[4]);
+        reader.addBook(books[1]);
+        reader.addBook(books[3]);
+        reader.addBook(books[4]);
+
+        reader.setAsRead(books[0]);
+        reader.setAsRead(books[4]);
+
+        List<Book> actualValues = new LinkedList<>();
+        actualValues.addAll(reader.getAllUnreadBooks().get());
+
+        Assertions.assertEquals(expectedValues, actualValues);
     }
 }

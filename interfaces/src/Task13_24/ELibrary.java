@@ -1,11 +1,11 @@
-package Task13_18;
+package Task13_24;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
 // ********************
-// *** Task 13 - 17 ***
+// *** Task 13 - 24 ***
 // ********************
 
 public class ELibrary {

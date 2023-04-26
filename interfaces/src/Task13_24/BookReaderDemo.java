@@ -1,11 +1,11 @@
-package Task13_18;
+package Task13_24;
 
 import utils.ConsoleColors;
 
 import java.util.List;
 
 // ********************
-// *** Task 13 - 17 ***
+// *** Task 13 - 24 ***
 // ********************
 
 public class BookReaderDemo {
@@ -72,5 +72,18 @@ public class BookReaderDemo {
         System.out.println(" Found by partial title: " + partialTitle);
         System.out.println(ConsoleColors.YELLOW + booksWithPartialTitle);
         System.out.println(ConsoleColors.RESET + "");
+
+        // Marked book as read
+        System.out.print(" Mark book: " + books[0] +
+                " as read = " + reader.setAsRead(books[0]));
+        System.out.println(books[0] + " is read = " + books[0].isRead());
+
+        // Show all read books
+        System.out.println("\n List of read books: ");
+        System.out.println(reader.getAllReadBooks().get());
+
+        // Show all unread books
+        System.out.println("\n List of unread books: ");
+        System.out.println(reader.getAllUnreadBooks().get());
     }
 }
