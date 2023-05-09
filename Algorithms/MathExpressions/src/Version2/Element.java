@@ -1,6 +1,7 @@
 package Version2;
 
-public interface Node {
+public interface Element {
     public <T> T getData();
     public boolean isOperator();
+    public boolean isScope();
 }

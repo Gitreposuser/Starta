@@ -1,6 +1,6 @@
 package Version2;
 
-public class Variable implements Node{
+public class Variable implements Element {
     private Float data;
 
     public <Float> Float getData() {
@@ -13,6 +13,11 @@ public class Variable implements Node{
 
     @Override
     public boolean isOperator() {
+        return false;
+    }
+
+    @Override
+    public boolean isScope() {
         return false;
     }
 }

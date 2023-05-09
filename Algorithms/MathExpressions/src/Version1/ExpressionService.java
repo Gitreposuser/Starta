@@ -1,5 +1,10 @@
+package Version1;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class ExpressionService {
     public String fileBuilder(String expression) {
@@ -26,19 +31,39 @@ public class ExpressionService {
         }
     }
 
-    public void compileFile() throws IOException {
-        String[] commands = new String[] {
-                "cmd.exe",
-                "/c",
-                //"start",
-                //"/wait",
-                //"111.txt",
-                "javac Calculate.java",
-                //"java Calculate"
-        };
-        ProcessBuilder process = new ProcessBuilder();
-        process.command(commands);
-        process.start();
+    public boolean isFileCreated() {
+        Path path = Paths.get("Calculate.java");
+        return Files.exists(path);
     }
 
+    public boolean isFileReady() {
+        Path path = Paths.get("Calculate.java");
+        return Files.isReadable(path);
+    }
+
+    public void compileFile() throws IOException {
+        String[] compileCommands = new String[] {
+                "cmd.exe",
+                "/c",
+                "start",
+                "/wait",
+                "javac Calculate.java"
+        };
+        ProcessBuilder compile = new ProcessBuilder();
+        compile.command(compileCommands);
+        compile.start();
+    }
+
+    public void runFile() throws IOException {
+        String[] runCommands = new String[] {
+                "cmd.exe",
+                "/c",
+                "start",
+                "/wait",
+                "java Calculate"
+        };
+        ProcessBuilder run = new ProcessBuilder();
+        run.command(runCommands);
+        run.start();
+    }
 }
