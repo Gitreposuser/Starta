@@ -135,15 +135,15 @@ public class ExpressionService {
 
     // Debug methods
     public void showElements() {
-        System.out.println("");
+        System.out.println();
         for(Element element : elements) {
             System.out.print(element.getData().toString());
         }
-        System.out.println("");
+        System.out.println();
     }
 
     public void showElementsDetailed() {
-        System.out.println("");
+        System.out.println();
         for(Element element : elements) {
             if(element.isScope()) {
                 System.out.println(element.getData().toString() + " is scope");
